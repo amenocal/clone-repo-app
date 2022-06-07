@@ -12,7 +12,6 @@ module.exports = (app) => {
     });
     console.log(context)
     console.log("I received a push event")
-
     return true;
   });
 
