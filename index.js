@@ -6,11 +6,12 @@ module.exports = (app) => {
   // Your code here
   app.log.info("Yay, the app was loaded!");
 
-  app.on("issues.opened", async (context) => {
+  app.on("push", async (context) => {
     const issueComment = context.issue({
       body: "Thanks for opening this issue!",
     });
-    return context.octokit.issues.createComment(issueComment);
+    console.log("I received a push event")
+    return true;
   });
 
   // For more information on building apps:
