@@ -11,6 +11,7 @@ module.exports = (app) => {
       body: "Thanks for opening this issue!",
     });
     console.log("I received a push event")
+
     return true;
   });
 
