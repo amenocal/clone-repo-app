@@ -10,6 +10,7 @@ module.exports = (app) => {
     const issueComment = context.issue({
       body: "Thanks for opening this issue!",
     });
+    console.log(context)
     console.log("I received a push event")
 
     return true;
